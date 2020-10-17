@@ -17,6 +17,16 @@
     </style>
 </head>
 <body>
-<div id="mydiv">Hello world</div>
+<div id="mydiv" onmouseover="Newtext()" onmouseout="oldtext()">Hello world</div>
 </body>
+<script>
+    function Newtext(){
+        
+        document.getElementById("mydiv").innerHTML= "Can I help you?";
+       
+    }
+    function oldtext(){
+        document.getElementById("mydiv").innerHTML= "Hello world";
+    }
+</script>
 </html>

@@ -15,7 +15,11 @@
         /* TODO: write JS code here */
        
         window.onload = function(){
-            document.getElementById("mydiv").style.backgroundColor="blue";
+            var arr=["blue","green","red"];
+            var i= Math.floor(Math.random() * 3); 
+
+            document.getElementById("mydiv").style.backgroundColor=arr[i];
+
         }
 
         function colorBG(){
